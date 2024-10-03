@@ -1,70 +1,48 @@
-# Worlde# Getting Started with Create React App
+Wordle Game Clone
+A simple Wordle clone built using React. The game picks a random 5-letter word and gives the user six attempts to guess it correctly. The UI provides feedback on the correctness of the guess by coloring the tiles to show how close the guess was to the actual word.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Random 5-letter word selection.
+Six chances to guess the word.
+Feedback via colored tiles:
+Green: Letter is in the correct position.
+Yellow: Letter is in the word but in the wrong position.
+Gray: Letter is not in the word.
+Keyboard input handling with real-time updates to the guess.
+Simple design and easy-to-understand gameplay.
+Demo
+Here's a quick overview of how the game works:
 
-## Available Scripts
+Guess the 5-letter word using your keyboard.
+The game will check your guess and color the tiles:
+Green for correct letters in the right spot.
+Yellow for letters in the word but wrong spot.
+Gray for incorrect letters.
+You have 6 attempts to find the solution!
+Technologies Used
+React: For building the UI and managing the game state.
+Datamuse API: For fetching random 5-letter words as solutions.
+Getting Started
+Follow these instructions to get the project running locally.
 
-In the project directory, you can run:
+Prerequisites
+Ensure you have the following installed:
+Node.js (v14+)
+npm (v6+)
 
-### `npm start`
+Installation
+Clone the repository: git clone https://github.com/sajanshr/Wordle.git
+Navigate into the project directory: cd Wordle
+Install dependencies: npm install
+Run the app in development mode: npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+How to Play
+Open the game in your browser.
+Use your keyboard to guess a 5-letter word.
+Press Enter to submit your guess or Backspace to delete a character.
+The game will highlight the letters of your guess based on their correctness.
+You have 6 tries to guess the correct word.
+API Used
+This project uses the Datamuse API to fetch 5-letter words. The API is queried to return a random list of 5-letter words, from which the solution is selected.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+API URL used: https://api.datamuse.com/words?sp=?????&max=5
